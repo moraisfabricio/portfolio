@@ -316,7 +316,7 @@ a{
 /* ----- END OF FOOTER  ----- */
 
 /* ----- MEDIA QUERIES ----- */
-@media(min-width:600px){
+@media screen and (min-width:600px){
     .home .home-image{
         max-width: 60%;
     }
