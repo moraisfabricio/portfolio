@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 1800px;
+}
+html{
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ----- HEADER ----- */
+li{
+   list-style: none; 
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+.navbar .nav-logo a{
+    font-size: 32px;
+    font-weight: 800;
+    font-family: 'Playfair Display', serif;
+}
+.navbar .nav-logo p{
+    text-transform: uppercase;
+    letter-spacing: 10.5px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgb(100, 100, 100);
+    text-align: center;
+    padding-left: 2px;
+    padding-top: 3px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 40px;
+    width: 100%;
+    position: fixed;
+    right: 40px;
+}
+.nav-link{
+    transition: 0.3s ease-in-out;
+    font-size: 50px;
+    font-weight: 800;
+    color: black;
+    font-family: 'Playfair Display', serif;
+}
+.nav-link:hover{
+    color:rgb(100, 100, 100) ;
+}
+.hamburger{
+    cursor: pointer;
+}
+.hamburger .bar{
+    display: block;
+    width: 35px;
+    height: 4px;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+/* ----- END OF HEADER ----- */
+
+.to-top{
+    display: flex;
+    right: 2px;
+    bottom: 2px;
+    position: fixed;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+}
+.to-top.active{
+    opacity: 0.8;
+    pointer-events: auto;
+}
+
+/* ----- HOME ----- */
+.home{
+    padding-top: 20px;
+}
+.home .home-image{
+    margin: 50px auto 0;
+    max-width: 70%;
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-image:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 7%, rgba(255, 255, 255, 0.2) 14%, rgba(255, 255, 255, 0.1) 100%), url(./img/profile.png);
+}
+.home .home-content{
+    min-width: 240px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.home .home-content h3{
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(131, 130, 130);
+    padding-left: 2px;
+    position: absolute;
+    top: 450px;
+}
+.home .home-content h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 800;
+    min-width: 340px;
+    position: absolute;
+    top: 480px;
+    min-width: 350px;
+}
+.home .home-content p{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+    line-height: 30px;
+    margin-top: 40px;
+}
+.home .home-content a{
+    font-size: 18px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    font-weight: 500;
+    border-radius: 10px 10px 0 0;
+    padding: 5px;
+    width: 180px;
+    margin-top: 40px;
+    text-align: center;
+}
+/* ----- END OF HOME ----- */
+
+/* ----- SKILLS  ----- */
+.skills{
+    padding-top: 100px;
+    justify-content: center;
+    margin: 20px;
+}
+.skills p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+    margin-bottom: 5px;
+}
+.skills span{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.skills .skills-content{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+.skills .skills-content .emblem:hover{
+    transform: scale(1.15);
+    transition: all 0.3s ease;
+}
+.skills img{
+    width: 60px;
+}
+.skills h3{
+    font-size: 18px;
+    font-weight: 800;
+}
+/* ----- END OF SKILLS  ----- */
+
+/* ----- PROJECTS  ----- */
+.projects{
+    padding-top: 100px;
+    justify-content: center;
+    margin: 20px 20px;
+}
+.projects p{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+    margin-bottom: 5px;
+}
+.projects span{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+.column{
+    display: flex;
+    padding: 120px auto;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    width: cover;
+}
+.photo-item{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+    height: 90%;
+}
+.photo-item img{
+    width: 100%;
+}
+.photo-item img:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.photo-item h3{
+    font-size: 36px;
+    font-weight: 800;
+    padding: 20px 0 0 20px;
+    top: 0;
+    display: flex;
+    color: white;
+    background: black;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+}
+.photo-item a{
+    padding: 20px 0 30px 20px;
+    top: 0;
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    background: black;
+}
+.photo-item a:hover{
+    color: rgb(150, 150, 150);
+}
+/* ----- END OF PROJECTS  ----- */
+
+/* ----- CONTACT  ----- */
+.contact{
+    padding: 20px;
+}
+.contact p{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+.contact h3{
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(150, 150, 150);
+    margin-bottom: 40px;
+}
+.contact .work-information{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 40px;
+    gap: 60px;
+}
+.contact .work-information img{
+    width: 50px;
+}
+.contact .work-information h4{
+    font-size: 18px;
+    font-weight: 800;
+}
+/* ----- END OF CONTACT  ----- */
+
+/* ----- FOOTER  ----- */
+.footer p{
+    font-family: 'Playfair Display', serif;
+    padding: 100px 0 80px 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(130, 130, 130);
+}
+/* ----- END OF FOOTER  ----- */
+
+/* ----- MEDIA QUERIES ----- */
+@media(min-width:600px){
+    .home .home-image{
+        max-width: 60%;
+    }
+}
+@media(min-width:700px){
+    .home .home-image{
+        max-width: 50%;
+    }
+}
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+        position: fixed;
+        right: 20px;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        font-size: 32px;
+        font-weight: 800;
+        position: fixed;
+        right: -100%;
+        top: 0;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgba(250, 250, 250, 0.95);
+        width: 100%;
+        height: 100vh;
+        text-align: center;
+        justify-content: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 12px;
+    }
+    .nav-item a{
+        color: black;
+    }
+    .nav-menu.active{
+        right: 0;
+    }
+    .home .home-image{
+        width: 80%;
+    }
+    .home .home-content p{
+        max-width: 430px;
+    }
+}
+@media (min-width: 768px) {
+    html{
+        padding: 0 30px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    .home{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .home .home-content{
+        margin-top: 200px;
+    }
+    .home .home-content h3{
+        top: 150px;
+    }
+    .home .home-content h2{
+        top: 180px;
+    }
+    .home .home-image{
+        padding: 150px 150px 0 0;
+        width: 600px;
+        margin-right: 80px;
+    }
+    .skills .skills-content{
+        gap: 50px;
+    }
+    .photo-gallery{
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-item{
+        height: 85%;
+    }
+    .column{
+        display: grid;
+        grid-template-areas: 
+        "A B"
+        "C D";
+        justify-content: center;
+    }
+    .column > div:nth-child(1){
+        grid-area: A;
+    }
+    .column > div:nth-child(2){
+        grid-area: B;
+    }
+    .column > div:nth-child(3){
+        grid-area: C;
+    }
+    .column > div:nth-child(4){
+        grid-area: D;
+    }
+}
+@media (min-width: 968px) {
+    .nav-menu{
+        gap: 80px;
+    }
+    .home .home-image{
+        padding-top: 700px;
+        max-width: 90%;
+        margin-right: 120px;
+    }
+    .home .home-content{
+        padding-top: 300px;
+    }
+    .home .home-content h2{
+        font-size: 70px;
+        padding-top: 250px;
+    }
+    .home .home-content h3{
+        font-size: 20px;
+        padding-top: 250px;
+    }
+    .home .home-content p{
+        font-size: 26px;
+        padding-top: 40px;
+        max-width: 60%;
+    }
+    .home .home-content a{
+        font-size: 16px;
+    }
+    .skills span{
+        font-size: 56px;
+    }
+    .skills .skills-content{
+        gap: 120px;
+    }
+    .column {
+        display: grid;
+        grid-template-areas: 
+        "A B C D";
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .projects span{
+        font-size: 56px;
+    }
+    .photo-item h3{
+        font-size: 50px;
+    }
+    .contact p{
+        font-size: 56px;
+    }
+    .contact h3{
+        font-size: 26px;
+    }
+    .contact .work-information{
+        gap: 180px;
+    }
+}
+@media (min-width: 1200px) {
+    
+    .home .home-content h2{
+        font-size: 100px;
+    }
+    .home .home-content h3{
+        font-size: 24px;
+    }
+    .footer p{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1500px) {
+    html{
+        padding: 0 150px;
+    }
+    .nav-menu{
+        padding-right: 150px;
+    }
+    .home .home-image{
+        width: 80%;
+    }
+}
+@media (min-width: 1800px) {
+    .nav-menu{
+        position: absolute;
+        padding-right: 350px;
+    }
+}
+/* ----- END OF MEDIA QUERIES ----- */
