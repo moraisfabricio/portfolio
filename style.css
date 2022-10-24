@@ -125,6 +125,7 @@ a{
     padding-left: 2px;
     position: absolute;
     top: 420px;
+    min-width: 300px;
 }
 .home .home-content h2{
     font-family: 'Playfair Display', serif;
@@ -315,14 +316,7 @@ a{
 /* ----- END OF FOOTER  ----- */
 
 /* ----- MEDIA QUERIES ----- */
-@media(min-width:360px){
-    .home .home-content h3{
-    }
-    .home .home-content h2{
-    }
-}
 @media(min-width:600px){
-    
     .home .home-image{
         max-width: 60%;
     }
