@@ -506,6 +506,12 @@ a{
     .home .home-image{
         width: 80%;
     }
+    .to-top{
+        display: flex;
+        right: 150px;
+        bottom: 40px;
+        position: fixed;
+    }
 }
 @media (min-width: 1800px) {
     .nav-menu{
@@ -513,16 +519,7 @@ a{
         padding-right: 350px;
     }
     .to-top{
-        display: flex;
-        left: 1780px;
-        bottom: 20px;
-        position: fixed;
-        cursor: pointer;
-        opacity: 0;
-        pointer-events: none;
-        transition: all 0.3s ease-in-out;
-        z-index: 1;
-
+        left: 1550px;
     }
 }
 /* ----- END OF MEDIA QUERIES ----- */
