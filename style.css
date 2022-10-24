@@ -81,8 +81,8 @@ a{
 
 .to-top{
     display: flex;
-    right: 2px;
-    bottom: 2px;
+    right: 20px;
+    bottom: 20px;
     position: fixed;
     cursor: pointer;
     opacity: 0;
@@ -511,6 +511,18 @@ a{
     .nav-menu{
         position: absolute;
         padding-right: 350px;
+    }
+    .to-top{
+        display: flex;
+        left: 1780px;
+        bottom: 20px;
+        position: fixed;
+        cursor: pointer;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+
     }
 }
 /* ----- END OF MEDIA QUERIES ----- */
