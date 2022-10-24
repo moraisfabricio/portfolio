@@ -7,7 +7,6 @@
     box-sizing: border-box;
     overflow-x: hidden;
     max-width: 1800px;
-
 }
 html{
     scroll-behavior: smooth;
@@ -316,6 +315,14 @@ a{
 /* ----- END OF FOOTER  ----- */
 
 /* ----- MEDIA QUERIES ----- */
+@media(min-width:300px){
+    .home .home-content h3{
+        top: 350px;
+    }
+    .home .home-content h2{
+        top: 380px;
+    }
+}
 @media screen and (min-width:600px){
     .home .home-image{
         max-width: 60%;
