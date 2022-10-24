@@ -7,10 +7,12 @@
     box-sizing: border-box;
     overflow-x: hidden;
     max-width: 1800px;
+
 }
 html{
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
+    min-width: 360px;
 }
 
 /* ----- HEADER ----- */
@@ -108,7 +110,7 @@ a{
     background-image:linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.1) 7%, rgba(255, 255, 255, 0.2) 14%, rgba(255, 255, 255, 0.1) 100%), url(./img/profile.png);
 }
 .home .home-content{
-    min-width: 240px;
+    min-width: 360px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -122,7 +124,7 @@ a{
     color: rgb(131, 130, 130);
     padding-left: 2px;
     position: absolute;
-    top: 450px;
+    top: 420px;
 }
 .home .home-content h2{
     font-family: 'Playfair Display', serif;
@@ -130,7 +132,7 @@ a{
     font-weight: 800;
     min-width: 340px;
     position: absolute;
-    top: 480px;
+    top: 440px;
     min-width: 350px;
 }
 .home .home-content p{
@@ -313,7 +315,14 @@ a{
 /* ----- END OF FOOTER  ----- */
 
 /* ----- MEDIA QUERIES ----- */
+@media(min-width:360px){
+    .home .home-content h3{
+    }
+    .home .home-content h2{
+    }
+}
 @media(min-width:600px){
+    
     .home .home-image{
         max-width: 60%;
     }
