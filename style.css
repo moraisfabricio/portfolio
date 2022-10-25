@@ -5,13 +5,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     max-width: 1800px;
 }
 html{
     scroll-behavior: smooth;
     font-family: 'Inter', sans-serif;
     min-width: 360px;
+}
+body{
+    overflow-x: hidden;
 }
 
 /* ----- HEADER ----- */
@@ -123,7 +125,7 @@ a{
     color: rgb(131, 130, 130);
     padding-left: 2px;
     position: absolute;
-    top: 420px;
+    margin-top: 50px;
     min-width: 300px;
 }
 .home .home-content h2{
@@ -132,7 +134,7 @@ a{
     font-weight: 800;
     min-width: 340px;
     position: absolute;
-    top: 440px;
+    margin-top: 40px;
     min-width: 350px;
 }
 .home .home-content p{
@@ -140,7 +142,7 @@ a{
     font-weight: 500;
     color: rgb(150, 150, 150);
     line-height: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .home .home-content a{
     font-size: 18px;
@@ -226,6 +228,7 @@ a{
     position: relative;
     z-index: 0;
     width: cover;
+    padding-top: 60px;
 }
 .photo-item{
     position: relative;
@@ -291,7 +294,7 @@ a{
     text-align: center;
     justify-content: center;
     padding-top: 40px;
-    gap: 60px;
+    gap: 20px;
 }
 .contact .work-information img{
     width: 50px;
@@ -315,17 +318,32 @@ a{
 /* ----- END OF FOOTER  ----- */
 
 /* ----- MEDIA QUERIES ----- */
-@media(min-width:300px){
+@media(min-width:10px){
     .home .home-content h3{
         top: 350px;
     }
     .home .home-content h2{
         top: 380px;
     }
+    .skills h3{
+        font-size: 14px;
+    }
+    .contact .work-information h4{
+        font-size: 14px;
+    }
 }
-@media screen and (min-width:600px){
+@media (min-width:600px){
     .home .home-image{
-        max-width: 60%;
+        max-width: 50%;
+    }
+    .skills .skills-content{
+        gap: 40px;
+    }
+    .contact .work-information{
+        gap: 40px;
+    }
+    .contact h3{
+        font-size: 18px;
     }
 }
 @media(min-width:700px){
@@ -397,18 +415,21 @@ a{
         margin-top: 200px;
     }
     .home .home-content h3{
-        top: 150px;
+        margin-top: 0;
     }
     .home .home-content h2{
-        top: 180px;
+        margin-top: 0;
+    }
+    .home .home-content p{
+        margin-top: 250px;
     }
     .home .home-image{
-        padding: 150px 150px 0 0;
+        padding: 280px 150px 0 0;
         width: 600px;
         margin-right: 80px;
     }
     .skills .skills-content{
-        gap: 50px;
+        gap: 60px;
     }
     .photo-gallery{
         display: flex;
@@ -436,6 +457,12 @@ a{
     .column > div:nth-child(4){
         grid-area: D;
     }
+    .contact .work-information{
+        gap: 60px;
+    }
+    .to-top{
+        right: 40px;
+    }
 }
 @media (min-width: 968px) {
     .nav-menu{
@@ -447,20 +474,20 @@ a{
         margin-right: 120px;
     }
     .home .home-content{
-        padding-top: 300px;
-    }
-    .home .home-content h2{
-        font-size: 70px;
-        padding-top: 250px;
+        padding-top: 200px;
     }
     .home .home-content h3{
         font-size: 20px;
-        padding-top: 250px;
+        margin-top: 0;
+    }
+    .home .home-content h2{
+        font-size: 70px;
+        margin-top: 0;
     }
     .home .home-content p{
         font-size: 26px;
-        padding-top: 40px;
-        max-width: 60%;
+        margin-top: 0;
+        max-width: 80%;
     }
     .home .home-content a{
         font-size: 16px;
@@ -469,7 +496,7 @@ a{
         font-size: 56px;
     }
     .skills .skills-content{
-        gap: 120px;
+        gap: 100px;
     }
     .column {
         display: grid;
@@ -488,14 +515,16 @@ a{
         font-size: 56px;
     }
     .contact h3{
-        font-size: 26px;
+        font-size: 22px;
     }
     .contact .work-information{
-        gap: 180px;
+        gap: 100px;
     }
 }
 @media (min-width: 1200px) {
-    
+    .home .home-content{
+        padding-top: 300px;
+    }
     .home .home-content h2{
         font-size: 100px;
     }
@@ -514,7 +543,9 @@ a{
         padding-right: 150px;
     }
     .home .home-image{
-        width: 80%;
+        width: 60%;
+        margin-right: 50px;
+
     }
     .to-top{
         display: flex;
